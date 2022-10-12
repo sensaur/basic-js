@@ -18,6 +18,7 @@ function transform(arr) {
   let res = []
   for (let i = 0; i < arr.length; i++) {
     console.log("1=>", arr[i])
+    console.log("res=>", res)
     if (arr[i] === '--double-next') {
       if (!!arr[i + 1]) {
         res.push("*")
@@ -30,9 +31,10 @@ function transform(arr) {
       res.push("*")
     } else if (arr[i] === '--discard-next') {
       res.push("*")
+      i++;//
     } else if (arr[i] === '--double-prev') {
-      if (!!arr[i - 1]) {
-        res.push(arr[i - 1])
+      if (res.length && res[res.length-1] !== '*') {
+        res.push(res[res.length-1])//
         res.push("*")
       } else {
       }
@@ -41,6 +43,7 @@ function transform(arr) {
     }
   }
   return res.filter(el => el !== "*")
+  // return res
 }
 
 module.exports = {
@@ -52,3 +55,4 @@ module.exports = {
 // console.log(transform(['--double-prev', 1, 2, 3],))
 // console.log(transform([1, 2, 3, '--double-next']))
 // console.log(transform([1, 2, 3, '--discard-next']))
+console.log(transform([1, 2, 3, '--discard-next', 1337, '--double-prev', 4, 5]))
