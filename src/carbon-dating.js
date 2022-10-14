@@ -18,10 +18,10 @@ const HALF_LIFE_PERIOD = 5730;
  *
  */
 function dateSample(sampleActivity) {
-  console.log(sampleActivity)
-  console.log(typeof sampleActivity)
-  console.log(Number(sampleActivity))
-  console.log(isNaN(Number(sampleActivity)))
+  // console.log(sampleActivity)
+  // console.log(typeof sampleActivity)
+  // console.log(Number(sampleActivity))
+  // console.log(isNaN(Number(sampleActivity)))
   if (typeof sampleActivity !== "string" || typeof Number(sampleActivity) !== 'number' || isNaN(Number(sampleActivity))) return false
   if (Number(sampleActivity) > 15 || Number(sampleActivity) < 0) return false
   // if (sampleActivity < 0) return false
@@ -33,4 +33,4 @@ module.exports = {
   dateSample
 };
 
-console.log(dateSample(''))
+// console.log(dateSample(''))

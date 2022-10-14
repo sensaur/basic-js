@@ -27,4 +27,4 @@ module.exports = {
 };
 
 const depthCalc = new DepthCalculator();
-console.log(depthCalc.calculateDepth([[[]]]))
+// console.log(depthCalc.calculateDepth([[[]]]))

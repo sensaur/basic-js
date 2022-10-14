@@ -17,8 +17,8 @@ function transform(arr) {
   if (!Array.isArray(arr)) throw new Error("'arr' parameter must be an instance of the Array!")
   let res = []
   for (let i = 0; i < arr.length; i++) {
-    console.log("1=>", arr[i])
-    console.log("res=>", res)
+    // console.log("1=>", arr[i])
+    // console.log("res=>", res)
     if (arr[i] === '--double-next') {
       if (!!arr[i + 1]) {
         res.push("*")
@@ -55,4 +55,4 @@ module.exports = {
 // console.log(transform(['--double-prev', 1, 2, 3],))
 // console.log(transform([1, 2, 3, '--double-next']))
 // console.log(transform([1, 2, 3, '--discard-next']))
-console.log(transform([1, 2, 3, '--discard-next', 1337, '--double-prev', 4, 5]))
+// console.log(transform([1, 2, 3, '--discard-next', 1337, '--double-prev', 4, 5]))

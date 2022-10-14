@@ -26,9 +26,9 @@ module.exports = {
   createDreamTeam
 };
 
-console.log(createDreamTeam([
-  'Amelia',
-  'Grace',
-  'Lily',
-  'Ruby',
-]))
+// console.log(createDreamTeam([
+//   'Amelia',
+//   'Grace',
+//   'Lily',
+//   'Ruby',
+// ]))
