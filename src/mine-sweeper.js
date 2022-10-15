@@ -25,9 +25,9 @@ const { NotImplementedError } = require('../extensions/index.js');
  */
 function minesweeper(matrix) {
   // console.log(matrix)
-  // let res = JSON.parse(JSON.stringify(matrix));
-  let res = [...matrix]
-  // console.log(res)
+  let res = JSON.parse(JSON.stringify(matrix));
+  // let res = [...matrix]
+  console.log(res)
   for (let i = 0; i < matrix.length; i++) {
     for (let j = 0; j < matrix[0].length; j++) {
       let sum = 0;
