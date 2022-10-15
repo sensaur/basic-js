@@ -17,7 +17,7 @@ function deleteDigit(num) {
 
   for (let i = 0; i < str.length; i++) {
     let slicedDigit = str.slice(0, i) + str.slice(i + 1)
-    console.log(slicedDigit)
+    // console.log(slicedDigit)
     res.push(slicedDigit)
   }
 
@@ -28,4 +28,4 @@ module.exports = {
   deleteDigit
 };
 
-console.log(deleteDigit(152234))
+// console.log(deleteDigit(152234))
